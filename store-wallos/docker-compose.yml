@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: store-wallos_web_1
-      APP_PORT: 8080
+      APP_PORT: 80
   web:
     image: bellamy/wallos:latest
     ports:
