@@ -1,16 +1,16 @@
 services:
   app_proxy:
-      environment:
-        APP_HOST: store-wallos_web_1
-        APP_PORT: 8282
-        PROXY_AUTH_ADD: "false"
-  wallos:
+    environment:
+      APP_HOST: store-wallos_web_1
+      APP_PORT: 8282
+      PROXY_AUTH_ADD: "false"
+  web:
     image: bellamy/wallos:latest
     ports:
       - "8282:80/tcp"
     environment:
       TZ: 'Atlantic/Madeira'
-
+    # Volumes store your data between container upgrades
     volumes:
       - './db:/var/www/html/db'
       - './logos:/var/www/html/images/uploads/logos'
