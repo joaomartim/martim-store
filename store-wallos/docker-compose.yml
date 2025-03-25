@@ -1,35 +1,19 @@
 services:
-  web:
-    container_name: wallos
+  app_proxy:
+      environment:
+        APP_HOST: store-wallos_web_1
+        APP_PORT: 8282
+        PROXY_AUTH_ADD: "false"
+  wallos:
     image: bellamy/wallos:latest
     ports:
       - "8282:80/tcp"
     environment:
       TZ: 'Atlantic/Madeira'
+
     volumes:
       - './db:/var/www/html/db'
       - './logos:/var/www/html/images/uploads/logos'
     restart: unless-stopped
-    networks:
-      - proxy_network
 
-  app_proxy:
-    image: nginx
-    container_name: app_proxy
-    restart: always
-    depends_on:
-      - web
-    networks:
-      - proxy_network
-    environment:
-      APP_HOST: wallos  # Corrigido para o nome correto do container
-      APP_PORT: 80
-      PROXY_AUTH_ADD: "false"
-    ports:
-      - "80:80" # Proxy reverso rodando na porta 80
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-
-networks:
-  proxy_network:
-    driver: bridge
+# TZ: 'Atlantic/Madeira'
