@@ -1,7 +1,7 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: store-doom_web_1
+      APP_HOST: martim-store-doom_web_1
       APP_PORT: 8080
       PROXY_AUTH_ADD: "false"
   web:
