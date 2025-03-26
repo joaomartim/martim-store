@@ -5,7 +5,7 @@ tagline: Subscription management, with graphical support and more.
 icon: https://i.imgur.com/1sfX9Ru.png
 category: testes
 version: "latest"
-port: 8282
+port: 80
 description: >-
   Introduction:
 
