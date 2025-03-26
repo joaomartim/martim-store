@@ -3,6 +3,7 @@ services:
     environment:
       APP_HOST: martim-store-wallos_web_1
       APP_PORT: 8282
+      PROXY_AUTH_ADD: "true"
   web:
     image: bellamy/wallos:latest
     ports:
