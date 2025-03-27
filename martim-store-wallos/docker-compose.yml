@@ -1,10 +1,10 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: martim-store-wallos_server_1
+      APP_HOST: martim-store-wallos_wallos_1
       APP_PORT: 8282
       PROXY_AUTH_ADD: "false"
-  server:
+  wallos:
     image: bellamy/wallos:latest
     ports:
       - "8282:80/tcp"
@@ -12,8 +12,8 @@ services:
       TZ: 'Atlantic/Madeira'
     # Volumes store your data between container upgrades
     volumes:
-      - './db:/var/www/html/db'
-      - './logos:/var/www/html/images/uploads/logos'
+      - /db:/var/www/html/db
+      - /logos:/var/www/html/images/uploads/logos
     restart: unless-stopped
 
 # TZ: 'Atlantic/Madeira'
