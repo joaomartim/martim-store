@@ -3,12 +3,12 @@ services:
     environment:
       APP_HOST: martim-store-wallos_wallos_1
       APP_PORT: 80
-      PROXY_AUTH_ADD: "false"
+      PROXY_AUTH_ADD: "true"
   wallos:
     container_name: wallos
     image: bellamy/wallos:3.3.0
-    ports:
-      - "8282:80/tcp"
+    port:
+      - 8282
     environment:
       TZ: 'Atlantic/Madeira'
     # Volumes store your data between container upgrades
