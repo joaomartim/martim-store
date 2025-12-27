@@ -4,8 +4,8 @@ name: WallOS
 tagline: Subscription management, with graphical support and more.
 icon: https://i.imgur.com/1sfX9Ru.png
 category: testes
-version: "3.3.0"
-port: 8282
+version: "latest"
+port: 80
 description: >-
   Introduction:
 
