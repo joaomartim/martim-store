@@ -14,5 +14,3 @@ services:
       - ${APP_DATA_DIR}/wallos/db:/var/www/html/db
       - ${APP_DATA_DIR}/wallos/logos:/var/www/html/images/uploads/logos
     restart: unless-stopped
-    healthcheck:
-      test: ["NONE"]
