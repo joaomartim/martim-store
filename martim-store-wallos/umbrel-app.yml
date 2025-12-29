@@ -37,5 +37,7 @@ gallery:
 
 dependencies: []
 path: ""
+defaultUsername: ""
+defaultPassword: ""
 submitter: Martim Franco
 submission: https://github.com/joaomartim/martim-store
