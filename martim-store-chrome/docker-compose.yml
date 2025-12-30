@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: martim-store-chrome_web_1
+      APP_PORT: 80
+      PROXY_AUTH_ADD: "false"
+  web:
+    image: linuxserver/chrome:latest
+    environment:
+      PUID: 1000
+      PGID: 1000
+      TZ: Atlantic/Madeira
+    volumes:
+      - ${APP_DATA_DIR}/chrome/path/to/config:/config
+    shm_size: 1gb
+    restart: unless-stopped

@@ -1,15 +1,15 @@
 manifestVersion: 1.1
-id: martim-store-wallos
-name: WallOS
+id: martim-store-chrome
+name: Chrome
 tagline: Subscription management, with graphical support and more.
-icon: https://i.imgur.com/1sfX9Ru.png
-category: Finanças
+icon: #https://i.imgur.com/1sfX9Ru.png
+category: Navegadores
 version: "latest"
-port: 8282
+port: 3001
 description: >-
   Introduction:
 
-    Wallos is a powerful, open-source, and self-hostable web application designed to empower you in managing your finances with ease. Say goodbye to complicated spreadsheets and expensive financial software - Wallos simplifies the process of tracking expenses and helps you gain better control over your financial life.
+    Chrome is a powerful, open-source, and self-hostable web application designed to empower you in managing your finances with ease. Say goodbye to complicated spreadsheets and expensive financial software - Chrome simplifies the process of tracking expenses and helps you gain better control over your financial life.
 
   Features:
 
@@ -25,15 +25,15 @@ description: >-
     Statistics: Another perspective into your spendings.
     Notifications: Wallos supports multiple notification methods (email, discord, pushover, telegram, gotify and webhooks). Get notified about your upcoming payments.
     Multi Language support.
-developer: WallOS
-website: https://github.com/ellite/Wallos
-repo: https://github.com/ellite/Wallos
-support: https://github.com/ellite/Wallos/issues
+developer: linuxserver.io
+website: #https://github.com/ellite/Wallos
+repo: #https://github.com/ellite/Wallos
+support: #https://github.com/ellite/Wallos/issues
 gallery:
-  - https://i.imgur.com/RJB6ynW.png
-  - https://i.imgur.com/8aFmpSu.png
-  - https://i.imgur.com/Yfu4RU2.png
-  - https://i.imgur.com/6DyL9Fd.png
+  # - https://i.imgur.com/RJB6ynW.png
+  # - https://i.imgur.com/8aFmpSu.png
+  # - https://i.imgur.com/Yfu4RU2.png
+  # - https://i.imgur.com/6DyL9Fd.png
 
 dependencies: []
 path: ""
