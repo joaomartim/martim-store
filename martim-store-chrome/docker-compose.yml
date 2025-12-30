@@ -3,15 +3,15 @@ version: "3.7"
 services:
   app_proxy:
     environment:
-      APP_HOST: martim-store-chrome_web_1
-      APP_PORT: 3000
+      APP_HOST: martim-store-chrome_server_1
+      APP_PORT: 3001
       PROXY_AUTH_ADD: "false"
-  web:
-    image: lscr.io/linuxserver/chrome:latest
+  server:
+    image: linuxserver/chrome:version-143.0.7499.169-1@sha256:9c6d188ca78cf7ad5cfc31c615a15f69a2b74a7aac68beb532f871c7090e70f5
     environment:
-      PUID: 1000
-      PGID: 1000
-      TZ: Atlantic/Madeira
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
     volumes:
       - ${APP_DATA_DIR}/chrome/path/to/config:/config
     shm_size: 1gb

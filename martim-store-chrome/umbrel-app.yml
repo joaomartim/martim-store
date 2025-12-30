@@ -4,7 +4,7 @@ name: Chrome
 tagline: Subscription management, with graphical support and more.
 icon: #https://i.imgur.com/1sfX9Ru.png
 category: Navegadores
-version: "latest"
+version: "143.0.7499.169-1"
 port: 3001
 description: >-
   Introduction:
